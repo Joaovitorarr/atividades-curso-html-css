@@ -1,0 +1,462 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --txt-color: #fff;
+    --border-color: rgb(102, 91, 91, 0.1) ;
+    --background-header: black;
+    --backgroind-main: #101010;
+    --details: #2fbf71 ;
+}
+
+#headerh {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 70px;
+    background: var(--backgroind-main);
+    color: var(--txt-color);
+    font-family: "Rubik", sans-serif;
+    z-index: 3;
+    display: none;
+}
+
+#headerh div {
+    width: 90%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#botaomenu {
+    display: none;
+}
+
+label[for='botaomenu'] {
+    cursor: pointer;
+    background: var(--details);
+    font-size: 30px;
+    color: var(--txt-color);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+#headerv {
+    position: fixed;
+    width: 250px;
+    height: 100%;
+    background: var(--background-header);
+    color: var(--txt-color);
+    font-family: "Rubik", sans-serif;
+    z-index: 3;
+}
+
+#profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 65px 0 0;
+}
+
+#profilefoto {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 5px solid var(--txt-color);
+    background: url('../img/jv.jpg') no-repeat center center/ cover ;
+}
+
+#profilenome {
+    margin-top: 14px;
+    letter-spacing: 2px;
+}
+
+#menuv {
+    margin: 45px 0;
+}
+
+#menuv a {
+    display: block;
+    color: var(--txt-color);
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 15px 30px;
+    font-size: 12px;
+    letter-spacing: 3px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+#menuv a:hover {
+    color: var(--details);
+    box-shadow: inset 3px 0 0 var(--details) ;
+}
+
+a #contatolink {
+    border-bottom: none;
+}
+
+#social {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    width: 250px;
+    padding: 12px 0;
+}
+
+#social a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration:none ;
+    color: var(--txt-color);
+    border-radius: 50%;
+    padding: 8px;
+}
+
+#social a:hover {
+    background: var(--details);
+}
+
+main {
+    position: relative;
+    margin-left: 250px;
+    background: var(--backgroind-main);
+    min-height: 100vh;
+    height: auto;
+    color: var(--txt-color);
+    font-family: "Rubik", sans-serif;
+   
+}
+
+section {
+    height: auto;
+    min-height: 100vh;
+    margin: 0 auto;
+    width: 90%;
+}
+
+section a {
+    text-decoration: none;
+    color: var(--txt-color);
+    display: flex;
+    width: 160px;
+    background: var(--details);
+    box-shadow: 3px 3px 0px var(--txt-color);
+    justify-content: center;
+    padding: 10px 20px;
+}
+
+section p {
+    font-size: 18px;
+    font-weight: lighter;
+    margin-bottom: 20px;
+    line-height: 1.7;
+    text-align: justify;
+}
+
+section h2 {
+    font-size: 25px;
+    font-weight: normal;
+    margin-bottom: 20px; 
+    padding: 20px 0;
+}
+
+section h3 {
+    margin-bottom: 30px;
+}
+
+section#sectioninicio {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100%;
+} 
+
+section#sectioninicio div {
+    width: 49%;
+    min-width: 300px;
+}
+section#sectioninicio h1 {
+    font-size: 65px;
+    margin-bottom: 20px;
+}
+
+
+section#sectioninicio img {
+    width: 80%;
+    border-radius: 60%;
+    border: 2px solid var(--txt-color);
+}
+
+section#sobremim {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+section#sobremim > div {
+    width: 49%;
+    min-width: 300px;
+}
+
+div#sobremimgradefotos {
+    display: flex;
+    gap: 20px;
+}
+
+.sobremimfotos {
+    margin-bottom: 20px;
+}
+
+#sobremimfotocoluna2 {
+    padding-top: 50px;
+}
+
+section#sobremim img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+section#sobremim h2 {
+    font-weight: bolder;
+}
+
+#sobrerod {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+
+.sbmquantidade {
+    display:flex;
+    width: 160px;
+}
+
+.sbmquantidade p:first-child {
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+.sbmquantidade p:last-child {
+    line-height: 1.2 ;
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+}
+
+.card {
+    width: 49%;
+    min-width: 300px;
+    background: var(--background-header);
+    margin-bottom: 20px;
+    padding: 40px;
+}
+
+.card:hover {
+    background: var(--details);
+}
+
+section#servico #servicograde {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+section#servico h2 {
+    font-weight: bolder;
+}
+
+section#portifolio #portifoliograde {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#portifoliocardimg {
+    position: relative;
+    width: 40%;
+    min-width: 202px;
+    height: 250px;
+    margin-bottom: 100px;
+}
+
+.overflow {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.overflow>div {
+    height: 100%;
+}
+
+.overflow>div:hover {
+    transform: scale(1.1);
+}
+
+.overflow #img1 {
+    background: url(../img/tba.png) no-repeat center center/cover;
+}
+
+.overflow #img2 {
+    background: url(../img/atv2.png) no-repeat center center/cover;
+}
+
+.overflow #img3 {
+    background: url(../img/atv3.png) no-repeat center center/cover;
+}
+
+.overflow #img4 {
+    background: url(../img/tba.png) no-repeat center center/cover;
+}
+
+section#portifolio #portifoliocardimg #portifoliocardtitulo {
+    margin-top: -30%;
+}
+
+section#portifolio #portifoliocardtitulo {
+    position: absolute;
+    width: 90%;
+    height: 200px;
+    background: var(--background-header);
+    right: 0;
+    padding: 20px; 
+}
+
+#portifoliocardtitulo p {
+    font-size: 12;
+}
+
+
+
+section#contato #contatorow {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+section#contato #contatorow>div {
+    width: 49%;
+    min-width:300px ;
+    background: var(--background-header);
+    padding: 40px;
+    margin-bottom: 20px;
+}
+
+section#contato #contatotxt div {
+    display: flex;
+    align-items: center;
+}
+
+section#contato #contatotxt div p {
+    margin: auto 10px  0;
+    display: flex;
+    align-items: center;
+}
+
+section#contato input {
+    border: 1px solid var(--txt-color);
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+#contatoform div {
+    display: flex;
+    justify-content: space-between;
+} 
+
+section#contato #inputnome, #inputemail {
+    width: 49%;
+}
+
+section#contato #inputassunto {
+    width: 100%;
+}
+
+section#contato textarea {
+    border: 1px solid aquamarine;
+    width: 100%;
+    height: 100px;
+    padding:10px ;
+}
+
+
+@media (max-width: 1200px) {
+    #headerh {
+        display: flex;
+    }
+
+    #headerv {
+        margin-left: -250px;
+        transition: all 0.4s;
+        display: -250px;
+        top: 0;
+    }
+
+    label[for='botaomenu'] {
+        display: flex;
+    }
+
+    main {
+        margin-left: 0;
+        margin-top: 70px;
+    }
+    #botaomenu:checked ~ #headerv {
+        margin-left: 0;
+    }
+    section#servico h2 {
+       margin-top: 70px; 
+    }
+}
+
+@media (max-width: 690px) {
+
+
+    section#sectioninicio #incdescricao {
+        width: 100%;
+    }
+
+    section#sectioninicio #iniciofoto {
+        margin: 50px 0 auto;
+    }
+
+    section#sobremim #sobremimtxt {
+        width: 100%;
+    }
+
+    section#sobremim #sobremimgradefotos {
+        margin: 50px 0 auto;
+        width: 100px;
+    }
+
+    section#servico .card {
+        width: 100%;
+    }
+
+    #portifoliocardimg {
+        width: 100%;
+        margin-bottom: 200px;
+    }
+    section3contato #contatoform>div {
+        width: 100%;
+        min-width: 300px;
+    }
+}
